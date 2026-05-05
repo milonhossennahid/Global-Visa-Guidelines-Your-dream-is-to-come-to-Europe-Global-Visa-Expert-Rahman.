@@ -13,12 +13,51 @@
         body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
         header { background-color: #0d47a1; color: white; padding: 15px 0; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
         .logo { font-size: 28px; font-weight: bold; margin: 0; display: inline-block; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: 1000; transition: color 0.3s; }
         nav a:hover { color: #fbc02d; }
-  
-        .container { width: 90%; max-width: 1200px; margin: auto; padding: 20px 0; }
+        
+       .container { width: 90%; max-width: 1200px; margin: auto; padding: 20px 0; }
         section { padding: 40px 0; }
-        h2 { text-align: center; color: #0d47a1; margin-bottom: 30px; font-size: 32px; border-bottom: 2px solid #0d47a1; display: inline-block; padding-bottom: 5px; }
+  
+         /* --- Lighting Review Marquee --- */
+        .lighting-marquee {
+            background: #F0FFF0; padding: 12px 0; overflow: hidden; white-space: nowrap;
+            border-bottom: 2px solid var(--accent); box-shadow: 0 0 10px rgba(211, 12, 12, 0.4);
+        }
+        .marquee-content { display: inline-white; animation: scrollLeft 3s linear infinite; }
+        .marquee-item {
+            display: inline-block; color: var(--block); font-weight: bold; font-size: 14px; margin: 0 40px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.2); text-transform: uppercase;
+        }
+        @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } 
+        }
+        
+        /* হ্যাপিনং এবং টাইটেল সেকশন */
+        h2, h3 { 
+        text-align: center; 
+        color: #0d47a1; 
+        margin-bottom: 6px; 
+        font-size: 25px; /* আপনি চাইলে এটা বাড়িয়ে বা কমিয়ে সব এক সাইজ করতে পারেন */
+        border-bottom: 2px solid #0d47a1; 
+        display: block; /* পুরো লাইনে বর্ডার পাওয়ার জন্য block করা হয়েছে */
+        padding-bottom: 15px; 
+         margin-top: 20px;
+         }
+
+          /* প্যারাগ্রাফ বা টেক্সট সেকশন */
+          p { 
+          color: #444; /* অতিরিক্ত কালো ভাব কমাতে হালকা ধূসর রঙ ব্যবহার করা হয়েছে */
+          line-height: 1.6; /* লেখার মাঝখানের ফাঁকা বাড়ানোর জন্য */
+          margin-bottom: 3px; /* এক প্যারাগ্রাফ থেকে অন্যটির দূরত্ব */
+          text-align: justify; /* লেখাগুলো দুই পাশে সমান দেখাবে */
+          font-size: 16px;
+        }
+
+       /* সার্ভিস কার্ডের ভেতরের p ট্যাগ */
+         .service-card p {
+          margin-top: 10px; /* টাইটেল এবং p এর মাঝে ফাঁকা বাড়ানোর জন্য */
+          font-weight: normal; /* অতিরিক্ত বোল্ড ভাব কমাতে */
+         }
 
         /* সার্ভিস সেকশন */
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; }
@@ -58,75 +97,107 @@
 <body>
 <header>
         <div class="container">
-            <h1 class="logo">Global Visa Guidelines</h1>
-            <p>Your dream is to come to Europe | Global visa guidelines to fulfill your dreams | Expert Rahman.</p>
+            <h1 class="logo">World Wide Visa Guide</h1>
+            <p style="color:#7FFF00">Your dream is to come to Europe | Global visa guidelines to fulfill your dreams | Expert Rahman.</p>
             <nav>
-                <a href="#services">✈️Work Visa</a>
-                <a href="#Study">🧳Study visa</a>
-                <a href="#contact">☎️Contact</a>
+                <a href="#services">Canada Guide</a>
+                <a href="#Study">Australia Guide</a>
+                <a href="#contact">Contact us</a>
             </nav>
         </div>
     </header>
    <a href="#" target="_blank" style="display:block;">
   <img src="https://uploads.onecompiler.io/44m2zj4qk/44m5rwf3w/12913.gif"  alt="aud" 
        style="width:100%; height:auto;"></a>
-  <img src="https://uploads.onecompiler.io/44db59mje/44dkvz79d/1000208016.avif"  alt="aud" 
-       style="width:100%; height:auto;"></a>
-       
+      
+      <div class="lighting-marquee">
+    <div class="marquee-content">
+        <span class="marquee-item">★ Welcome to Canada Australia Global Visa Center.</span>
+        <span class="marquee-item">★ Trusted Immigration Visa Processing Service in Bangladesh.</span>
+        <span class="marquee-item">★ USA Invitation Letter Received - Tanvir.</span>
+        <span class="marquee-item">★ Poland Factory Job Visa Issued - Sabbir.</span>
+        <span class="marquee-item">★ Authorized Administrative Assistance for Visa Applicants.</span>
+    </div>
+</div>
+
     <section id="services" class="container">
 
    <a href="#" target="_blank" style="display:block;">
   <img src="https://uploads.onecompiler.io/44he6ma79/44he9ssfw/10687.gif"  alt="aud" 
        style="width:100%; height:auto;"></a>
-        <center><h2>The Dream is Closer</h2>
-        </center>
-       
+        <center><h1>The Dream is Closer</h1></center>
+           </div>
+          </div>
+
             <div class="services-grid">
             <img src="https://uploads.onecompiler.io/44kz6hkf9/44me4umpa/1000223185.jpg" style="width:100%; height:auto;"></i>
-               <h2>Work in Canada - Visa Guide (2026)</h2>
-               <b>Qualifications: Must meet language requirements, have relevant experience, pass a medical exam, and provide proof of sufficient funds to support themselves.</p>
-               <p>Processing: Time may vary; applicants can check their status online.</p>
-               <p>Special Programs: International Experience Canada (IEC): Working Holiday or Young Professional Visa.</p> 
+               <h2>Work in Canada - Visa Guide (2026).</h2>
+               <p>Qualifications: Must meet language requirements, have relevant experience, pass a medical exam, and provide proof of sufficient funds to support themselves.</p>
+               <p>Processing: Time may vary; applicants can check their status online. Special Programs: International Experience Canada (IEC): Working Holiday or Young Professional Visa.</p> 
                <p>A Canadian work permit allows foreign nationals to legally work in Canada and is often a key pathway to permanent residence (PR).</p>
-               <p>With Canada welcoming over,<b style="color:blue;"> 200,000, </b> temporary workers annually, understanding your options—and choosing the right permit—is essential.</p>
-               <p>Express Entry: A points-based system for skilled workers.</p>
-               <p>In this case, you will need to seek the help of a person who has obtained citizenship.</p> 
-            </div>
+               <p>With Canada welcoming over, 200,000, Temporary workers annually, understanding your options—and choosing the right permit—is essential.</p>
+               <p>Express Entry: A points-based system for skilled workers. In this case, you will need to seek the help of a person who has obtained citizenship.</p> 
+           </div>
+           </div>
            
             <div class="services-grid">
             <img src="https://uploads.onecompiler.io/44kz6hkf9/44me4umpa/1000223187.jpg" style="width:100%; height:auto;"></i>
-               <h2>International require a (subclass 500), study in Australia.</h2>
-               <b>Requirements for Student Visa: Confirmation of Enrolment (CoE), A letter or code from your Australian institution confirming your place in a registered course (CRICOS).</p>
+               <h3>International require a (subclass 500), study in Australia.</h3>
+               <p>Requirements for Student Visa: Confirmation of Enrolment (CoE), A letter or code from your Australian institution confirming your place in a registered course (CRICOS).</p>
                <p>Genuine Student (GS) Requirement: A statement demonstrating you intend to study in Australia temporarily.</p>
-               <p>Financial Capability: Evidence of funds for tuition fees, living expenses (approx. $29,710 AUD per year), and return airfare.</p> 
-               <p>English Proficiency: Proof of language skills (e.g., IELTS, TOEFL, PTE).</p>
-               <p>Health Insurance: <b style="color:blue;"> OSHC </b> must cover your entire stay.</p>
+               <p>Financial Capability: Evidence of funds for tuition fees, living expenses (approx. ($29,710) AUD. per year), and return airfare.</p> 
+               <p>English Proficiency: Proof of language skills (e.g., IELTS, TOEFL, PTE). Health Insurance: OSHC must cover your entire stay.</p>
                <p>Health and Character Checks: Police checks and medical examinations may be required.</p>
-               <p>Pay Visa Fee: The base application fee is generally around <b style="color:blue;"> $1,600 </b> AUD.</p> 
-             <p>Processing: Applications should be made 8–12 weeks before the program starts.</p>
+               <p>Pay Visa Fee: The base application fee is generally around ($1600) AUD. Processing: Applications should be made 8–12 weeks before the program starts.</p>
             </div>
          
            <div class="services-grid">
             <img src="https://uploads.onecompiler.io/44kz6hkf9/44me4umpa/1000223188.jpg" style="width:100%; height:auto;"></i>
-               <h2>Study in Canada as an international student.</h2>
-               <b>Requirements & Documents (2026): Letter of Acceptance (LOA): An unconditional offer from a Designated Learning Institution (DLI).</p>
+               <h2>Study in Canada - as an international student.</h2>
+               <p>Requirements & Documents (2026): Letter of Acceptance (LOA): An unconditional offer from a Designated Learning Institution (DLI).</p>
                <p>Provincial Attestation Letter (PAL): Required for most undergraduate and college applicants, excluding master's and doctoral students.</p>
-               <p>Financial Support (Proof of Funds): Evidence of funds to cover tuition and living expenses (including a <b style="color:blue;"> Guaranteed Investment Certificate - GICb </b> for many countries).</p> 
+               <p>Financial Support (Proof of Funds): Evidence of funds to cover tuition and living expenses (including a. Guaranteed Investment Certificate - GICb for many countries).</p> 
                <p>English Proficiency: Typically a minimum IELTS score of 6.0 for academic programs.</p>
-               <p>Documentation: Valid passport, Statement of Purpose <b style="color:blue;"> (SOP) </b> medical examination report, and police clearance certificate.</p>
+               <p>Documentation: Valid passport, Statement of Purpose. (SOP) medical examination report, and police clearance certificate.</p>
                <p>2026 Policy Updates: Work Hours: International students can work up to 24 hours per week off-campus during academic sessions. </p>
-               <p>Post-Graduation Work Permit <b style="color:blue;"> (PGWP): 1–3 years </b> depending on program length; master's/PhD students get 3 years.</p>
+               <p>Post-Graduation Work Permit. (PGWP): 1–3 years depending on program length; master's/PhD students get 3 years.</p>
             </div>
+
+          <div class="services-grid">
+          <img src="https://uploads.onecompiler.io/44kz6hkf9/44mpgd5jc/1000231680.png" style="width:100%; height:auto;"></i>
+          <h3>186 Visa Processing Time in 2026: What Applicants Are Really Waiting For</h3>
+           <p>The Subclass 186 visa is one of the most reliable ways to get permanent residency in Australia. But right now, processing times are longer than many applicants expected.</p>
+           <p>If you have already lodged your application or are about to, this article gives you the real numbers, explains why some people wait longer than others, and tells you what you can do to reduce.</p>
+            <p>The Department of Home Affairs does not process 186 applications in strict date order. It uses a priority system, which means two people who lodged on the same day can receive decisions months apart. </p>
+            <p>The times below reflect what applicants are actually experiencing as of early 2026.</a> Stream - (50%) of cases - (90%) of cases Notes.</a> Direct Entry - 12 months. 19 months. Most congested stream.</p>
+           <p>TRT (482 holders) - 13 months. 18 months. Standard cases.</a> Labour Agreement - 5 months. 9 months. Fewer applicants.</p>
+           <p>There are a few reasons behind the current delays. High application volume. The Department confirmed in October 2025 that it is receiving more 186 applications than it can process at pace. No definitive timeframes were provided at that stage.
+           </a>Annual quota limit. For the 2025 to 2026 financial year, the government has allocated 44,000 places for employer-sponsored visas under the ENS.</p>
+            <p>program. If that number is reached before the financial year ends, the Department pauses finalisation of remaining cases until 1 July 2026.
+            </a>Your application stays valid in the queue and is not cancelled.Processing is not first-in, first-out. Under Ministerial Direction No. 105, the Department gives priority to certain applications. As of early 2026, standard Direct Entry and TRT applications from March and June 2024 respectively were still being assessed.</p>
+            <h3>Summary: Important information</h3>
+             <p>Direct Entry: 12 to 19 months for most applicants (2026 data). TRT Stream: 13 to 18 months for most applicants. Labour Agreement Stream: 5 to 9 months
+              </a>Annual ENS quota: 44,000 places for 2025 to 2026. TSMIT Minimum Salary: AUD$76,515 from 1 July 2025. Health Test Validity: 12 months from the test date.</p>
+            </div>
+                     
+             <div class="services-grid">
              <img src="https://uploads.onecompiler.io/44meq4pvd/44mj3dyyh/13180.png"  alt="aud" style="width:100%; height:auto;"></a>
+            <p>work 2</p>
+            
             <div class="service-card">
             <img src="https://uploads.onecompiler.io/44kz6hkf9/44me4umpa/1000223187.jpg" style="width:100%; height:auto;"></i>
-                <p></p>
-            <img src="https://uploads.onecompiler.io/44meq4pvd/44mj3dyyh/13198.png" style="width:100%; height:auto;"></i>
-            <img src="https://uploads.onecompiler.io/44kz6hkf9/44me4umpa/1000223188.jpg" style="width:100%; height:auto;"></i>
-                <h3></h3>
-                <p></p>
-              <a href="#" target="_blank" style="display:block;">
-             <img src="https://uploads.onecompiler.io/44kz6hkf9/44me4umpa/1000223217.gif"  alt="aud" style="width:100%; height:auto;"></a>
+                <p>work 1</p>
+               </div>
+               
+           <div class="services-grid">
+            <img src="https://uploads.onecompiler.io/44kz6hkf9/44mpgd5jc/1000231698.jpg" style="width:100%; height:auto;"></i>
+            <h3>Can I Study in Europe for Free as an International Student?</h3>
+            <p>for free at many public universities in countries such as Germany, Norway, and Austria, which offer tuition-free education. Countries like France and Finland also provide affordable education, along with scholarships that help reduce overall costs. Top scholarships such as Erasmus Mundus, DAAD, and Eiffel Excellence can cover tuition fees, living expenses,</p>
+            <p>and travel. Many universities, including Ludwig Maximilian University of Munich, Technical University of Munich, and Humboldt University of Berlin, offer a wide range of programs taught in English, making it easier for international students to apply. Students can also work part-time during their studies and benefit from post-study work opportunities in several European countries,</p>
+            <p>helping them gain experience and manage living costs while studying in Europe for free with the right country, university, and scholarships. Want to study in Europe for free? Let Y-Axis help you through application process.</p>
+            <h4>Why Europe is a Top Destination for Free Education for International Students?</h4>
+            <img src="https://uploads.onecompiler.io/44kz6hkf9/44mpgd5jc/1000231699.jpg" style="width:100%; height:auto;">
+            <p>Europe is a top choice for international students seeking free or affordable education, with strong academic reputation and wide access to tuition-free universities. Countries like Germany and Norway offer free education at public universities, while France and Finland provide low-cost options and scholarships. With quality education, global exposure, and strong career opportunities, Europe remains a preferred study destination.</p>
             </div>
         </div>
     </section>
@@ -150,15 +221,15 @@
         <div class="contact-form-area">
             <form id="contactForm" class="contact-form">
                 <label for="name">Enter your Name:</label>
-                <input type="text" id="name" name="Name" placeholder="AbdurRahaman" required>
+                <input type="text" id="name" name="Name" placeholder="Enter Your Name" required>
 
-                <label for="number">WhatsApp Number:</label>
-                <input type="text" id="number" name="Whatsapp Number" placeholder="+16722844386" required>
+                <label for="number">Contact Number:</label>
+                <input type="text" id="number" name="Whatsapp Number" placeholder="+88" required>
 
                 <label for="email">E-mail ID:</label>
-                <input type="email" id="email" name="Gmail" placeholder="abdurrahamancanada@gmail.com" required>
+                <input type="email" id="email" name="Gmail" placeholder="@gmail.com" required>
 
-                <label for="message">Enter your comment</label>
+                <label for="message">Enter your Comment</label>
                 <textarea id="message" name="Message" rows="5" required></textarea>
 
                 <button type="submit">Submit Your Info</button>
@@ -169,7 +240,7 @@
     <footer>
         <div class="container">
             <h1>Global Visa Guidelines</h1>
-         <p>Your dream is to come to Europe | Global visa guidelines to fulfill your dreams | Expert Rahman.</p>
+         <p style="color:#40E0D0">To Make Your Dreams Come True | Worldwide Visa Guide | Expert Abdur Rahman | Canada Citizenship.</p>
            <img src="https://uploads.onecompiler.io/44kz6hkf9/44mpgd5jc/1000231054.png" width="100" height="100">
             <div class="quick-links">
                 <a href="https://wa.me/16722844386" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: +1 672 284 4386</a>
@@ -183,7 +254,7 @@
         </div>
     </footer>
 
-    <script>
+       <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault(); // ফর্ম সাবমিট হওয়া থামানো
 
